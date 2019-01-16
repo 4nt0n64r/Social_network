@@ -2,6 +2,7 @@
     <string name="app_name">Social network</string>
     <!-- strings for login activity-->
     <string name="credentials">test</string>
+    <string name="incorrect_credentials">Wrong login or password.</string>
     <string name="login">login</string>
     <string name="password">password</string>
     <string name="wrong_data">Login or password incorrect.</string>

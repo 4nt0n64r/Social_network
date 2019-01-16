@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Social network</string>
+    <!-- strings for login activity-->
+    <string name="credentials">test</string>
+    <string name="login">login</string>
+    <string name="password">password</string>
+    <string name="wrong_data">Login or password incorrect.</string>
+    <string name="empty_login">Fill login field.</string>
+    <string name="empty_password">Fill password field.</string>
+    <string name="empty_data">Fill login and password fields.</string>
+</resources>

@@ -16,10 +16,8 @@ class MainActivity : AppCompatActivity() {
 
         fun isFieldEmpty(field: EditText) = field.text.isEmpty()
         fun isCredentialsCorrect(login: EditText, passwd: EditText): Boolean {
-            Log.d("STR",(login.text.toString() == R.string.credentials.toString()).toString())
-            Log.d("STR",passwd.text.toString())
-            return ((login.text.toString() == R.string.credentials.toString()) and
-                    (passwd.text.toString() == R.string.credentials.toString()))
+            return ((login.text.toString() == getString(R.string.credentials)) and
+                    (passwd.text.toString() == getString(R.string.credentials)))
         }
 
         login_button.setOnClickListener {

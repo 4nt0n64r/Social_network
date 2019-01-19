@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Социальная сеть</string>
+    <string name="incorrect_credentials">Неверный логин или пароль</string>
+    <string name="login">логин</string>
+    <string name="password">пароль</string>
+    <string name="wrong_data">Логин или пароль введены неверно.</string>
+    <string name="empty_login">Заполните поле логина.</string>
+    <string name="empty_password">Заполните поле пароля.</string>
+    <string name="empty_data">Заполните поля логина и пароля.</string>
+    <string name="sign_in">Вход</string>
+</resources>

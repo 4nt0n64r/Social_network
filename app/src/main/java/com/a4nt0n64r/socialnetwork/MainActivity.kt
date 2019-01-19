@@ -1,5 +1,6 @@
 package com.a4nt0n64r.socialnetwork
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.EditText
@@ -46,7 +47,8 @@ class MainActivity : AppCompatActivity() {
                     Snackbar.LENGTH_SHORT
                 ).show()
             }else{
-                //старт news activity
+                val intent = Intent(this,FeedActivity::class.java)
+                startActivity(intent)
             }
         }
     }

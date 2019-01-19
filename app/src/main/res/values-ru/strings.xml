@@ -9,4 +9,7 @@
     <string name="empty_password">Заполните поле пароля.</string>
     <string name="empty_data">Заполните поля логина и пароля.</string>
     <string name="sign_in">Вход</string>
+    <string name="feed">Лента</string>
+    <string name="news">Новости</string>
+    <string name="notifications">Уведомления</string>
 </resources>

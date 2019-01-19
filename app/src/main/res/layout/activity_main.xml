@@ -31,13 +31,19 @@
             android:hint="@string/password"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" android:id="@+id/textInputLayout2"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp">
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+            android:id="@+id/textInputLayout2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:passwordToggleEnabled = "true">
 
         <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/passwd_textView"/>
+                android:layout_height="wrap_content"
+                android:id="@+id/passwd_textView"
+                android:inputType="textPassword"/>
 
     </com.google.android.material.textfield.TextInputLayout>
     <Button

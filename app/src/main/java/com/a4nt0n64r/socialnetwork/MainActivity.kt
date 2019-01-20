@@ -51,5 +51,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
+
+        listOf(34,"hello")
     }
 }

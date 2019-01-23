@@ -1,6 +1,6 @@
 # Social_network
 Social network prototype
 
-login: test
+login: test,
 password: test
 

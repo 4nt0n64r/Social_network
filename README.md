@@ -4,4 +4,4 @@ Social network prototype
 login: test,
 password: test 
 
-❮img src="screenshots/Feed.jpg"❯
+Try to add screenshots later.

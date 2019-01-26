@@ -22,7 +22,8 @@ class FeedActivity : AppCompatActivity() {
             NewsElement(
                 getString(R.string.season_changing),
                 getString(R.string.season_changing_text),
-                R.drawable.gravura
+                R.drawable.gravura,
+                false
             ),
             NotificationElement(
                 getString(R.string.insurrection),
@@ -42,7 +43,8 @@ class FeedActivity : AppCompatActivity() {
             NewsElement(
                 getString(R.string.battle_title),
                 getString(R.string.battle_description),
-                R.drawable.kavankajima
+                R.drawable.kavankajima,
+                false
             )
             ,
             NotificationElement(

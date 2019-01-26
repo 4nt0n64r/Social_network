@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.a4nt0n64r.socialnetwork.Feed.NewsAndNotification
 import com.a4nt0n64r.socialnetwork.Feed.NewsElement
@@ -45,10 +46,14 @@ private class NewsDelegate :
 
     override fun onBindViewHolder(item: NewsElement, viewHolder: ViewHolder, payloads: List<Any>) {
         Picasso.get().load(item.imgId).into(viewHolder.imagePlace)
+        viewHolder.title.text = item.title
+        viewHolder.text.text = item.text
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imagePlace: ImageView = itemView.findViewById(R.id.imagePlace)
+        val text:TextView = itemView.findViewById(R.id.text)
+        val title:TextView = itemView.findViewById(R.id.title)
     }
 }
 
@@ -73,9 +78,13 @@ private class NotificationDelegate :
 
     override fun onBindViewHolder(item: NotificationElement, viewHolder: ViewHolder, payloads: List<Any>) {
         Picasso.get().load(item.imgId).into(viewHolder.imagePlace)
+        viewHolder.title.text = item.title
+        viewHolder.text.text = item.text
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imagePlace: ImageView = itemView.findViewById(R.id.imagePlace)
+        val text:TextView = itemView.findViewById(R.id.text)
+        val title:TextView = itemView.findViewById(R.id.title)
     }
 }

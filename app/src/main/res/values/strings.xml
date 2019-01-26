@@ -14,4 +14,18 @@
     <string name="feed">Feed</string>
     <string name="news">News</string>
     <string name="notifications">Notifications</string>
+    <!-- strings for news and notifications-->
+    <string name="hojou">Hojou</string>
+    <string name="takeda">Takeda clan</string>
+    <string name="invade">\'s invade Musashi!</string>
+    <string name="union">Hojou clan offers union.</string>
+    <string name="message">My cavalry will trample your warriors! Run in fear!</string>
+    <string name="mesage_title">Message from Takeda</string>
+    <string name="insurrection">Insurrection</string>
+    <string name="vassal_betrayal">Vassal clan declared war on us!</string>
+    <string name="season_changing">Changing season</string>
+    <string name="season_changing_text">The end of summer brought more harvest. Now we can sell the surplus.</string>
+    <string name="war">War!</string>
+    <string name="battle_title">4th Battle of Kavanakjima</string>
+    <string name="battle_description">Uesugi Kenshin and Takeda Shingen began the battle of Kavanakjima.</string>
 </resources>

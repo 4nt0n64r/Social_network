@@ -12,4 +12,17 @@
     <string name="feed">Лента</string>
     <string name="news">Новости</string>
     <string name="notifications">Уведомления</string>
+    <string name="hojou">Ходзё</string>
+    <string name="takeda">Клан Такэда</string>
+    <string name="invade">вторгся в Мусаси!</string>
+    <string name="union">Клан Ходзё предлагает союз.</string>
+    <string name="message">Моя конница растопчет твоих воинов! Беги в страхе!</string>
+    <string name="mesage_title">Сообщение от Такэда</string>
+    <string name="insurrection">Восстание</string>
+    <string name="vassal_betrayal">Вассальный клан повернул мечи против нас!</string>
+    <string name="season_changing">Смена сезона</string>
+    <string name="season_changing_text">Конец лета принес больше урожая. Теперь мы можем продать излишки.</string>
+    <string name="war">Война!</string>
+    <string name="battle_title">4-я битва при Каванакадзиме</string>
+    <string name="battle_description">Уэсуги Кенсин и Такэда Синген начали битву при Каванакдзиме.</string>
 </resources>

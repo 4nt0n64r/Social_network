@@ -19,32 +19,36 @@ class FeedActivity : AppCompatActivity() {
 
 
         val feedList = listOf<NewsAndNotification>(
-            NewsElement("TITLE", "Text some text some text some text some text some text some text ", R.drawable.cat),
-            NotificationElement(
-                "TITLE",
-                "Text some text some text some text some text some text some text ",
-                R.drawable.cat
-            ),
-            NewsElement("TITLE", "Text some text some text some text some text some text some text ", R.drawable.cat),
-            NotificationElement(
-                "TITLE",
-                "Text some text some text some text some text some text some text ",
-                R.drawable.cat
+            NewsElement(
+                getString(R.string.season_changing),
+                getString(R.string.season_changing_text),
+                R.drawable.gravura
             ),
             NotificationElement(
-                "TITLE",
-                "Text some text some text some text some text some text some text ",
-                R.drawable.cat
+                getString(R.string.insurrection),
+                getString(R.string.vassal_betrayal),
+                R.drawable.betray
             ),
             NotificationElement(
-                "TITLE",
-                "Text some text some text some text some text some text some text ",
-                R.drawable.cat
+                getString(R.string.hojou),
+                getString(R.string.union),
+                R.drawable.union
             ),
             NotificationElement(
-                "TITLE",
-                "Text some text some text some text some text some text some text ",
-                R.drawable.cat
+                getString(R.string.war),
+                getString(R.string.takeda) + getString(R.string.invade),
+                R.drawable.war
+            ),
+            NewsElement(
+                getString(R.string.battle_title),
+                getString(R.string.battle_description),
+                R.drawable.kavankajima
+            )
+            ,
+            NotificationElement(
+                getString(R.string.mesage_title),
+                getString(R.string.message),
+                R.drawable.takeda
             )
         )
 
@@ -63,11 +67,11 @@ class FeedActivity : AppCompatActivity() {
                 }
                 R.id.menu_news -> {
                     adapter.setData(feedList.filter { it is NewsElement }) //= feedList.filter { it is NewsElement }
-                    Picasso.get().load(R.drawable.red_castle).into(backdrop)
+                    Picasso.get().load(R.drawable.japan_castle1).into(backdrop)
                 }
                 R.id.menu_notifications -> {
                     adapter.setData(feedList.filter { it is NotificationElement }) //= feedList.filter { it is NotificationElement }
-                    Picasso.get().load(R.drawable.eu_castle).into(backdrop)
+                    Picasso.get().load(R.drawable.japan_castle2).into(backdrop)
                 }
             }
             return true

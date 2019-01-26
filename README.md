@@ -2,5 +2,6 @@
 Social network prototype
 
 login: test,
-password: test
+password: test 
 
+Try to add screenshots later.

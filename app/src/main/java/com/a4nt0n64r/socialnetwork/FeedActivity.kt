@@ -30,27 +30,43 @@ class FeedActivity : AppCompatActivity() {
                 "TITLE",
                 "Text some text some text some text some text some text some text ",
                 R.drawable.cat
+            ),
+            NotificationElement(
+                "TITLE",
+                "Text some text some text some text some text some text some text ",
+                R.drawable.cat
+            ),
+            NotificationElement(
+                "TITLE",
+                "Text some text some text some text some text some text some text ",
+                R.drawable.cat
+            ),
+            NotificationElement(
+                "TITLE",
+                "Text some text some text some text some text some text some text ",
+                R.drawable.cat
             )
         )
 
         recycler.layoutManager = LinearLayoutManager(this)
 
-        val adapter = CustomAdapter(feedList)
+        val adapter = CustomAdapter()
+        adapter.setData(feedList)
         recycler.adapter = adapter
 
         fun onNavigationItemSelected(menu: BottomNavigationView): Boolean {
             val item = menu.selectedItemId
             when (item) {
                 R.id.menu_feed -> {
-                    adapter.feed = feedList.filter { it in feedList }
+                    adapter.setData(feedList.filter { it in feedList }) //= feedList.filter { it in feedList }
                     Picasso.get().load(R.drawable.himeji_castle).into(backdrop)
                 }
                 R.id.menu_news -> {
-                    adapter.feed = feedList.filter { it is NewsElement }
+                    adapter.setData(feedList.filter { it is NewsElement }) //= feedList.filter { it is NewsElement }
                     Picasso.get().load(R.drawable.red_castle).into(backdrop)
                 }
                 R.id.menu_notifications -> {
-                    adapter.feed = feedList.filter { it is NotificationElement }
+                    adapter.setData(feedList.filter { it is NotificationElement }) //= feedList.filter { it is NotificationElement }
                     Picasso.get().load(R.drawable.eu_castle).into(backdrop)
                 }
             }
@@ -60,6 +76,7 @@ class FeedActivity : AppCompatActivity() {
         navigation.setOnNavigationItemSelectedListener {
             onNavigationItemSelected(navigation)
         }
+
 
     }
 }

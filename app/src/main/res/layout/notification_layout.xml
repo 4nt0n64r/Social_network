@@ -38,7 +38,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginEnd="8dp" app:layout_constraintStart_toEndOf="@+id/linearLayoutCompat"
                     android:layout_marginStart="8dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"
-                    app:layout_constraintBottom_toTopOf="@+id/text"/>
+                    app:layout_constraintBottom_toTopOf="@+id/text" app:layout_constraintHorizontal_bias="0.0"/>
             <TextView
                     android:id="@+id/text"
                     android:layout_height="wrap_content"

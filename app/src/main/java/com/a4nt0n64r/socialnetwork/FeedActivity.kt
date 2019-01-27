@@ -51,6 +51,12 @@ class FeedActivity : AppCompatActivity() {
                 getString(R.string.mesage_title),
                 getString(R.string.message),
                 R.drawable.takeda
+            ),
+            NewsElement(
+                getString(R.string.battle_title),
+                getString(R.string.battle_description),
+                R.drawable.kavankajima,
+                false
             )
         )
 

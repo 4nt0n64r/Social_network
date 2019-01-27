@@ -49,10 +49,10 @@ private class NewsDelegate :
         viewHolder.title.text = item.title
         viewHolder.text.text = item.text
         viewHolder.like.setOnClickListener {
-            if (!item.isLiked){
+            if (!item.isLiked) {
                 Picasso.get().load(R.drawable.like_icon_blue).into(viewHolder.like)
                 item.isLiked = !item.isLiked
-            }else{
+            } else {
                 Picasso.get().load(R.drawable.like_icon).into(viewHolder.like)
                 item.isLiked = !item.isLiked
             }
@@ -61,13 +61,11 @@ private class NewsDelegate :
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imagePlace: ImageView = itemView.findViewById(R.id.imagePlace)
-        val text:TextView = itemView.findViewById(R.id.text)
-        val title:TextView = itemView.findViewById(R.id.title)
-        val like:ImageView = itemView.findViewById(R.id.like)
+        val text: TextView = itemView.findViewById(R.id.text)
+        val title: TextView = itemView.findViewById(R.id.title)
+        val like: ImageView = itemView.findViewById(R.id.like)
     }
 }
-
-
 
 private class NotificationDelegate :
     AbsListItemAdapterDelegate<NotificationElement, NewsAndNotification, NotificationDelegate.ViewHolder>() {
@@ -94,7 +92,7 @@ private class NotificationDelegate :
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imagePlace: ImageView = itemView.findViewById(R.id.imagePlace)
-        val text:TextView = itemView.findViewById(R.id.text)
-        val title:TextView = itemView.findViewById(R.id.title)
+        val text: TextView = itemView.findViewById(R.id.text)
+        val title: TextView = itemView.findViewById(R.id.title)
     }
 }
